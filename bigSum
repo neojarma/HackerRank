@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class bigSum {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int n = input.nextInt();
+		long [] array = new long [n];
+		
+		for (int i = 0; i < array.length; i++) {
+			array[i] = input.nextLong();
+		}
+		
+		System.out.println(aVeryBigSum(array));
+	}
+	
+    static long aVeryBigSum(long[] ar) {
+        long hasil=0;
+
+            for(int j=0; j<ar.length; j++){
+                hasil+= ar[j];
+            }
+        
+        return hasil;
+    }
+}
